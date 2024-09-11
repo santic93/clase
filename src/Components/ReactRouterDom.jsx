@@ -13,7 +13,7 @@ export const Rrd = () => {
   }, []); // EL SEGUNDO ARGUMENTO DEL USE EFFECT [] ASEGURA QUE LA PETICION SE HAGA UNA SOLA VEZ
 
   return (
-    <div style={{ marginTop: 350 }}>
+    <div >
       React Router DOM
       <br />
       <hr />
