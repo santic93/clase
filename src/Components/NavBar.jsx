@@ -13,8 +13,8 @@ export const NavBar = () => {
         width: "100%",
         backgroundColor: "green",
         padding: "15px 30px",
-        gap: "20px",
         justifyContent: "space-around",
+        boxShadow: "3px 3px 3px white",
       }}
     >
       <Link to="/" style={{ color: "white", textDecoration: "none" }}>
