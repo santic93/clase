@@ -6,17 +6,24 @@ import { NavBar } from "./Components/NavBar";
 import AboutDetail from "./Components/AboutDetail";
 import { PostList } from "./Components/PostList";
 
+import { ContReact } from "./Components/ContReact";
+import DatosPersonalesProvider from "./Context/DatosPersonalesContext";
+
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Routes>
-        {/* <Route path="/" element={<Rrd />} /> */}
-        <Route path="/" element={<PostList />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/about/:id" element={<AboutDetail />} />
-      </Routes>
-    </div>
+    <>
+      {/* <NavBar /> */}
+      <DatosPersonalesProvider>
+        <Routes>
+          <Route path="/" element={<ContReact />} />
+          <Route path="/" element={<Rrd />} /> 
+          {/* <Route path="/" element={<Rrd />} /> */}
+          {/* <Route path="/" element={<PostList />} props={variable} />
+          <Route path="/about" element={<About />} />
+          <Route path="/about/:id" element={<AboutDetail />} /> */}
+        </Routes>
+      </DatosPersonalesProvider>
+    </>
   );
 }
 

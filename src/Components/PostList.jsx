@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-export const PostList = () => {
+export const PostList = ({}) => {
   const [posts, setPosts] = useState([]);
   let url = "https://jsonplaceholder.typicode.com/posts";
   useEffect(() => {
