@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       {/* <NavBar /> */}
+      {/* Compartimos con nuestros componentes el Contexto para que puedan acceder */}
       <DatosPersonalesProvider>
         <Routes>
           <Route path="/" element={<ContReact />} />
